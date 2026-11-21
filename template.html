@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page template · Malaria Microscopy AI</title>
+  <meta name="description" content="Template page showing the shared layout and styles of the Malaria Microscopy AI website.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ===== SHARED HEADER: copy this block into every page ===== -->
+  <div class="notice"><strong>Ongoing student research.</strong> This is not a medical or diagnostic tool.</div>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html"><span class="mark" aria-hidden="true"></span>
+        <span>Malaria Microscopy AI<small>Final year research · UCU Computing</small></span></a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="problem.html">The Problem</a></li>
+          <li><a href="approach.html">My Approach</a></li>
+          <li><a href="demo.html">Demo</a></li>
+          <li><a href="progress.html">Progress</a></li>
+          <li><a href="about.html">About &amp; Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- On each page, add aria-current="page" to that page's own link. -->
+  <!-- ===== END SHARED HEADER ===== -->
+
+  <main id="main">
+    <div class="wrap">
+
+      <section class="page-head">
+        <span class="tag">Template · not a real page</span>
+        <h1>Page title goes here</h1>
+        <p class="lead">This template shows every building block used on the six pages, so the layout can be checked on a laptop and a phone before the real pages are built (T13).</p>
+      </section>
+
+      <h2>Buttons</h2>
+      <a class="btn btn-primary" href="#">Watch the demo</a>
+      <a class="btn btn-secondary" href="#">How it works</a>
+
+      <h2>Three cards (Home)</h2>
+      <div class="cards">
+        <div class="card"><div class="icon" aria-hidden="true">?</div><h3>The problem</h3><p>Short card text, two or three lines long.</p></div>
+        <div class="card"><div class="icon" aria-hidden="true">⌁</div><h3>My approach</h3><p>Short card text, two or three lines long.</p></div>
+        <div class="card"><div class="icon" aria-hidden="true">▢</div><h3>Built for low-resource settings</h3><p>Short card text, two or three lines long.</p></div>
+      </div>
+
+      <h2>Pipeline diagram (My Approach)</h2>
+      <figure class="figure">
+        <picture>
+          <source media="(max-width: 760px)" srcset="images/pipeline-tall.svg">
+          <img src="images/pipeline-wide.svg" alt="Five steps: find the spots, connect neighbours, learn what matters, make it smaller, run on a phone" width="1280" height="420">
+        </picture>
+        <figcaption>Diagram swaps to a tall version on phone screens.</figcaption>
+      </figure>
+
+      <div class="box">
+        <h3>Highlighted box (for example ‘Why a graph?’)</h3>
+        <p>Mint background box for a short explanation.</p>
+      </div>
+
+      <div class="warn"><strong>Warning box.</strong> Used for the ‘Not a diagnostic tool’ notice on the Demo page.</div>
+
+      <div class="status"><strong>Status strip.</strong> Used for ‘Where things stand’ on the Home page.</div>
+
+      <h2>Timeline (Progress Updates)</h2>
+      <ol class="timeline">
+        <li class="next"><span class="when">Up next</span><span class="dot" aria-hidden="true"></span>
+          <div class="body"><h3>Next step title <span class="pill pill-next">Up next</span></h3><p>One or two lines of text.</p></div></li>
+        <li><span class="when">November 2026</span><span class="dot" aria-hidden="true"></span>
+          <div class="body"><h3>Finished step title <span class="pill pill-done">Done</span></h3><p>One or two lines of text.</p></div></li>
+      </ol>
+
+      <section class="sources" aria-labelledby="src">
+        <h2 id="src">Sources</h2>
+        <ol>
+          <li>[2] Reference in IEEE style, numbered as in the proposal.</li>
+          <li>[3] Another reference.</li>
+        </ol>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ===== SHARED FOOTER: copy this block into every page ===== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Student research project · Uganda Christian University</span>
+      <span>Contact: <a href="mailto:malaria.microscopy.project@gmail.com">malaria.microscopy.project@gmail.com</a></span>
+    </div>
+  </footer>
+  <!-- ===== END SHARED FOOTER ===== -->
+</body>
+</html>

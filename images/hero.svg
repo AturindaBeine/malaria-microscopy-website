@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 400" role="img" aria-labelledby="h"><title id="h">Illustration: blood cells on a slide linked into a graph, with one likely parasite flagged</title>
+<circle cx="220" cy="200" r="176" fill="#E7F2EE" stroke="#0F6E6A" stroke-width="10"/>
+<circle cx="220" cy="200" r="190" fill="none" stroke="#14302E" stroke-width="2" opacity=".18"/>
+<line x1="220" y1="200" x2="183" y2="148" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="220" y1="200" x2="193" y2="262" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="120" y1="231" x2="118" y2="285" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="120" y1="231" x2="133" y2="166" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="305" y1="156" x2="357" y2="185" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="305" y1="156" x2="283" y2="101" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="260" y1="292" x2="284" y2="243" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="260" y1="292" x2="332" y2="282" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="135" y1="109" x2="133" y2="166" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="135" y1="109" x2="178" y2="69" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="284" y1="243" x2="260" y2="292" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="284" y1="243" x2="332" y2="282" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="357" y1="185" x2="305" y2="156" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="357" y1="185" x2="284" y2="243" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="283" y1="101" x2="229" y2="112" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="283" y1="101" x2="305" y2="156" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="193" y1="262" x2="176" y2="324" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="193" y1="262" x2="220" y2="200" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="229" y1="112" x2="283" y2="101" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="229" y1="112" x2="183" y2="148" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="133" y1="166" x2="183" y2="148" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="133" y1="166" x2="135" y2="109" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="176" y1="324" x2="193" y2="262" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="176" y1="324" x2="118" y2="285" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="332" y1="282" x2="284" y2="243" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="332" y1="282" x2="260" y2="292" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="178" y1="69" x2="135" y2="109" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="178" y1="69" x2="229" y2="112" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="183" y1="148" x2="133" y2="166" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="183" y1="148" x2="229" y2="112" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="118" y1="285" x2="120" y2="231" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="118" y1="285" x2="176" y2="324" stroke="#0F6E6A" stroke-width="2" opacity=".45"/>
+<line x1="300" y1="62" x2="246" y2="176" stroke="#14302E" stroke-width="1.5"/>
+<circle cx="220" cy="200" r="26" fill="#F2C6CB" stroke="#D9603F" stroke-width="2"/>
+<circle cx="120" cy="231" r="22" fill="#F2C6CB" stroke="#D99AA3" stroke-width="2"/>
+<circle cx="305" cy="156" r="22" fill="#F2C6CB" stroke="#D99AA3" stroke-width="2"/>
+<circle cx="260" cy="292" r="22" fill="#F2C6CB" stroke="#D99AA3" stroke-width="2"/>
+<circle cx="135" cy="109" r="22" fill="#F2C6CB" stroke="#D99AA3" stroke-width="2"/>
+<circle cx="284" cy="243" r="22" fill="#F2C6CB" stroke="#D99AA3" stroke-width="2"/>
+<circle cx="357" cy="185" r="22" fill="#F2C6CB" stroke="#D99AA3" stroke-width="2"/>
+<circle cx="283" cy="101" r="22" fill="#F2C6CB" stroke="#D99AA3" stroke-width="2"/>
+<circle cx="193" cy="262" r="22" fill="#F2C6CB" stroke="#D99AA3" stroke-width="2"/>
+<circle cx="229" cy="112" r="22" fill="#F2C6CB" stroke="#D99AA3" stroke-width="2"/>
+<circle cx="133" cy="166" r="22" fill="#F2C6CB" stroke="#D99AA3" stroke-width="2"/>
+<circle cx="176" cy="324" r="22" fill="#F2C6CB" stroke="#D99AA3" stroke-width="2"/>
+<circle cx="332" cy="282" r="22" fill="#F2C6CB" stroke="#D99AA3" stroke-width="2"/>
+<circle cx="178" cy="69" r="22" fill="#F2C6CB" stroke="#D99AA3" stroke-width="2"/>
+<circle cx="183" cy="148" r="22" fill="#F2C6CB" stroke="#D99AA3" stroke-width="2"/>
+<circle cx="118" cy="285" r="22" fill="#F2C6CB" stroke="#D99AA3" stroke-width="2"/>
+<circle cx="214" cy="195" r="5" fill="#6B2E6E"/><circle cx="227" cy="206" r="3.5" fill="#6B2E6E"/>
+<circle cx="220" cy="200" r="36" fill="none" stroke="#D9603F" stroke-width="3.5" stroke-dasharray="7 5"/>
+<rect x="262" y="26" width="160" height="36" rx="18" fill="#14302E"/><text x="342" y="50" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="14" font-weight="600" fill="#fff">Likely parasite</text>
+</svg>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo · Malaria Microscopy AI</title>
+  <meta name="description" content="A recorded demo of the prototype app analysing thick blood smear images offline on an Android phone.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="notice"><strong>Ongoing student research.</strong> This is not a medical or diagnostic tool.</div>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html"><span class="mark" aria-hidden="true"></span>
+        <span>Malaria Microscopy AI<small>Final year research · UCU Computing</small></span></a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="problem.html">The Problem</a></li>
+          <li><a href="approach.html">My Approach</a></li>
+          <li><a href="demo.html" aria-current="page">Demo</a></li>
+          <li><a href="progress.html">Progress</a></li>
+          <li><a href="about.html">About &amp; Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <section class="page-head">
+        <span class="tag">Demo</span>
+        <h1>Demo: the prototype in action</h1>
+        <p class="lead">A short screen recording of my prototype app on an Android phone, analysing thick blood smear images with no internet connection. It shows the app as it is today, not a finished product.</p>
+      </section>
+      <div class="demo">
+        <div>
+          <!-- T17 (Day 9): replace this placeholder with the video:
+          <div class="video"><video controls preload="metadata" poster="images/demo-poster.jpg" playsinline>
+            <source src="video/demo.mp4" type="video/mp4">
+            Your browser can't play this video. <a href="video/demo.mp4">Download it instead</a>.
+          </video></div> -->
+          <div class="video" style="display:grid;place-items:center;color:var(--mint);text-align:center;padding:24px;max-width:360px">
+            <p><strong>Demo video coming soon</strong><br><span style="font-size:14px;opacity:.8">The recording is being edited and will appear here.</span></p>
+          </div>
+        </div>
+        <div>
+          <h2 style="margin-top:0">What you will see</h2>
+          <div class="prose"><ul>
+            <li>Choosing a thick blood smear image in the app</li>
+            <li>The app working offline, with the phone in airplane mode</li>
+            <li>Likely parasites circled, with a count, for a person to check</li>
+            <li>The confidence shown beside each mark, and where the app is still unsure</li>
+          </ul></div>
+          <div class="warn"><strong>Not a diagnostic tool.</strong> The prototype is unfinished research and has not been tested in a clinic. Malaria must be diagnosed by qualified laboratory staff.</div>
+          <p class="credit"><strong>Image credit:</strong> images in this demo come from the annotated malaria image dataset of the Makerere University AI Lab (<a href="https://air.ug/microscopy/">air.ug/microscopy</a>), released with J. A. Quinn et al., “Deep convolutional neural networks for microscopy-based point of care diagnostics,” PMLR vol. 56, 2016 [7]. Used under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International licence</a>. Highlight circles were added by my prototype.</p>
+        </div>
+      </div>
+      <section class="sources" aria-labelledby="src">
+        <h2 id="src">Sources</h2>
+        <p style="font-size:14px;color:var(--muted);margin-bottom:10px">Numbers match the reference list of my approved research proposal.</p>
+        <ol>
+          <li>[7] J. A. Quinn, R. Nakasi, P. K. B. Mugagga, P. Byanyima, W. Lubega, and A. Andama, “Deep convolutional neural networks for microscopy-based point of care diagnostics,” in <i>Proc. 1st Machine Learning for Healthcare Conf.</i>, PMLR vol. 56, 2016, pp. 271–281.</li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Student research project · Uganda Christian University</span>
+      <span>Contact: <a href="mailto:malaria.microscopy.project@gmail.com">malaria.microscopy.project@gmail.com</a></span>
+    </div>
+  </footer>
+</body>
+</html>

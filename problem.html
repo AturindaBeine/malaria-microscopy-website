@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Problem · Malaria Microscopy AI</title>
+  <meta name="description" content="Why malaria microscopy needs more expert eyes in rural Ugandan clinics.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="notice"><strong>Ongoing student research.</strong> This is not a medical or diagnostic tool.</div>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html"><span class="mark" aria-hidden="true"></span>
+        <span>Malaria Microscopy AI<small>Final year research · UCU Computing</small></span></a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="problem.html" aria-current="page">The Problem</a></li>
+          <li><a href="approach.html">My Approach</a></li>
+          <li><a href="demo.html">Demo</a></li>
+          <li><a href="progress.html">Progress</a></li>
+          <li><a href="about.html">About &amp; Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <section class="page-head">
+        <span class="tag">The Problem</span>
+        <h1>Why malaria slides need more expert eyes</h1>
+        <p class="lead">Malaria is still one of the deadliest infectious diseases in the world. The World Health Organization estimates 282 million cases and 610,000 deaths in 2024, with 95% of both in Africa, and Uganda carries a large share of this burden [1].</p>
+      </section>
+      <div class="prose">
+        <h2>How malaria is tested</h2>
+        <p>The gold-standard test, recommended by the WHO, is microscopy: a drop of blood is spread on a glass slide, stained and examined by a trained person who looks for the parasites [2], [3].</p>
+        <ul>
+          <li>A <strong>thick smear</strong> uses more blood, so it is much more sensitive for finding parasites [7].</li>
+          <li>A <strong>thin smear</strong> spreads the cells in a single layer, so the shape of infected cells can be seen and the type of parasite identified [7].</li>
+        </ul>
+        <h2>The gap</h2>
+        <p>Reading thick smears well takes training and time. Rural clinics in Uganda, especially those away from the big referral hospitals, do not have enough trained laboratory staff [2], [3]. This delays diagnosis and leads to inappropriate treatment, and children under five and pregnant women face the greatest risk [1], [2], [3].</p>
+        <h2>Where AI can help</h2>
+        <p>Researchers at the Makerere AI Lab have shown that AI models can find malaria parasites in photos of thick smears taken with a phone fitted to a microscope, and one of their models ran as an Android app [3], [7]. My research builds on this work.</p>
+        <div class="box">
+          <h3>What this research is not</h3>
+          <p>It is not a replacement for laboratory staff. The aim is a second pair of eyes that highlights likely parasites for a person to check. It is not a finished or clinically tested tool, and it must not be used to diagnose anyone.</p>
+        </div>
+        <p><a class="btn btn-primary" href="approach.html">How my approach works</a></p>
+      </div>
+      <section class="sources" aria-labelledby="src">
+        <h2 id="src">Sources</h2>
+        <p style="font-size:14px;color:var(--muted);margin-bottom:10px">Numbers match the reference list of my approved research proposal.</p>
+        <ol>
+          <li>[1] World Health Organization, “Malaria,” Fact sheet, 2025. [Online]. Available: <a href="https://www.who.int/news-room/fact-sheets/detail/malaria">who.int/news-room/fact-sheets/detail/malaria</a></li>
+          <li>[2] R. Nakasi, E. Mwebaze, A. Zawedde, J. Tusubira, B. Akera, and G. Maiga, “A new approach for microscopic diagnosis of malaria parasites in thick blood smears using pre-trained deep learning models,” <i>SN Applied Sciences</i>, vol. 2, p. 1255, 2020.</li>
+          <li>[3] R. Nakasi, E. Mwebaze, and A. Zawedde, “Mobile-aware deep learning algorithms for malaria parasites and white blood cells localization in thick blood smears,” <i>Algorithms</i>, vol. 14, no. 1, p. 17, 2021.</li>
+          <li>[7] J. A. Quinn, R. Nakasi, P. K. B. Mugagga, P. Byanyima, W. Lubega, and A. Andama, “Deep convolutional neural networks for microscopy-based point of care diagnostics,” in <i>Proc. 1st Machine Learning for Healthcare Conf.</i>, PMLR vol. 56, 2016, pp. 271–281.</li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Student research project · Uganda Christian University</span>
+      <span>Contact: <a href="mailto:malaria.microscopy.project@gmail.com">malaria.microscopy.project@gmail.com</a></span>
+    </div>
+  </footer>
+</body>
+</html>

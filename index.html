@@ -3,41 +3,80 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Malaria Microscopy AI · Coming soon</title>
-  <meta name="description" content="A plain-language website about a student research project on AI support for malaria microscopy in Ugandan clinics. Coming soon.">
-  <style>
-    :root { --ink:#14302E; --teal:#0F6E6A; --mint:#E7F2EE; --sand:#FAF7F1; --muted:#4F6662; }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-           background: var(--sand); color: var(--ink); min-height: 100vh;
-           display: flex; flex-direction: column; }
-    .notice { background: var(--ink); color: var(--mint); font-size: 14px;
-              text-align: center; padding: 8px 16px; }
-    main { flex: 1; display: grid; place-items: center; padding: 48px 24px; }
-    .box { max-width: 560px; text-align: center; }
-    .mark { width: 56px; height: 56px; border-radius: 50%; background: var(--teal);
-            margin: 0 auto 24px; position: relative; }
-    .mark::after { content: ""; position: absolute; inset: 15px; border-radius: 50%;
-                   border: 4px solid var(--mint); }
-    .tag { display: inline-block; font-size: 13px; font-weight: 600; color: var(--teal);
-           background: var(--mint); padding: 6px 12px; border-radius: 999px; margin-bottom: 16px; }
-    h1 { font-size: clamp(28px, 6vw, 40px); line-height: 1.15; margin-bottom: 14px; }
-    p { font-size: 17px; line-height: 1.6; color: var(--muted); }
-    footer { text-align: center; font-size: 13px; color: var(--muted); padding: 18px; }
-  </style>
+  <title>Home · Malaria Microscopy AI</title>
+  <meta name="description" content="A plain-language guide to final year research on an AI model that helps read malaria blood smears in understaffed Ugandan clinics.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <div class="notice"><strong>Ongoing student research.</strong> This is not a medical or diagnostic tool.</div>
-  <main>
-    <div class="box">
-      <div class="mark" aria-hidden="true"></div>
-      <span class="tag">Coming soon</span>
-      <h1>Malaria Microscopy AI</h1>
-      <p>A plain-language guide to a final year research project on AI support for reading malaria
-         blood smears in understaffed Ugandan clinics. The full site, with a recorded demo of the
-         prototype, is being built now.</p>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html"><span class="mark" aria-hidden="true"></span>
+        <span>Malaria Microscopy AI<small>Final year research · UCU Computing</small></span></a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="problem.html">The Problem</a></li>
+          <li><a href="approach.html">My Approach</a></li>
+          <li><a href="demo.html">Demo</a></li>
+          <li><a href="progress.html">Progress</a></li>
+          <li><a href="about.html">About &amp; Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <section class="hero">
+        <div>
+          <span class="tag">Research in progress · 2026</span>
+          <h1>Helping understaffed clinics read malaria slides like a specialist</h1>
+          <p class="lead">I am a final year Computer Science student at Uganda Christian University. My research is building a small AI model that looks at photos of thick blood smears and points out likely malaria parasites, so that a trained person can check them faster. It is designed to run offline on an ordinary Android phone in clinics that have few trained microscopists.</p>
+          <p style="margin-top:24px">
+            <a class="btn btn-primary" href="demo.html">Watch the demo</a>
+            <a class="btn btn-secondary" href="approach.html">How it works</a>
+          </p>
+        </div>
+        <div class="hero-art">
+          <img src="images/hero.svg" alt="Illustration: blood cells on a slide linked into a graph, with one likely parasite circled" width="440" height="400">
+        </div>
+      </section>
+
+      <div class="cards">
+        <div class="card"><div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></div><h3>The problem</h3>
+          <p>Looking at a stained drop of blood under a microscope is the standard test for malaria, but many rural clinics in Uganda have too few trained staff to read slides quickly [2], [3].</p>
+          <p style="margin-top:10px"><a href="problem.html">Read about the problem →</a></p></div>
+        <div class="card"><div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="7" r="2.5"/><circle cx="12" cy="13" r="3"/><circle cx="6" cy="19" r="2.5"/><path d="M7 7.5 10 11M17 8.5 14.5 11.5M10 15 7.5 17.5"/></svg></div><h3>My approach</h3>
+          <p>The model looks at each cell together with the cells around it, the way a microscopist does. A larger model then teaches a smaller one that is light enough for a phone.</p>
+          <p style="margin-top:10px"><a href="approach.html">See how it works →</a></p></div>
+        <div class="card"><div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg></div><h3>Built for low-resource settings</h3>
+          <p>Designed for a 4 GB RAM Android phone and trained only on Ugandan images collected at Mulago National Referral Hospital [3], [7].</p>
+          <p style="margin-top:10px"><a href="progress.html">Follow the progress →</a></p></div>
+      </div>
+
+      <div class="status"><strong>Where things stand:</strong> a working prototype app now runs fully offline on an ordinary Android phone and is shown in the recorded demo. The research is still in progress: the app has not been clinically validated and must not be used for diagnosis.</div>
+
+      <section class="sources" aria-labelledby="src">
+        <h2 id="src">Sources</h2>
+        <p style="font-size:14px;color:var(--muted);margin-bottom:10px">Numbers match the reference list of my approved research proposal.</p>
+        <ol>
+          <li>[2] R. Nakasi, E. Mwebaze, A. Zawedde, J. Tusubira, B. Akera, and G. Maiga, “A new approach for microscopic diagnosis of malaria parasites in thick blood smears using pre-trained deep learning models,” <i>SN Applied Sciences</i>, vol. 2, p. 1255, 2020.</li>
+          <li>[3] R. Nakasi, E. Mwebaze, and A. Zawedde, “Mobile-aware deep learning algorithms for malaria parasites and white blood cells localization in thick blood smears,” <i>Algorithms</i>, vol. 14, no. 1, p. 17, 2021.</li>
+          <li>[7] J. A. Quinn, R. Nakasi, P. K. B. Mugagga, P. Byanyima, W. Lubega, and A. Andama, “Deep convolutional neural networks for microscopy-based point of care diagnostics,” in <i>Proc. 1st Machine Learning for Healthcare Conf.</i>, PMLR vol. 56, 2016, pp. 271–281.</li>
+        </ol>
+      </section>
     </div>
   </main>
-  <footer>Student research project · Uganda Christian University</footer>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Student research project · Uganda Christian University</span>
+      <span>Contact: <a href="mailto:malaria.microscopy.project@gmail.com">malaria.microscopy.project@gmail.com</a></span>
+    </div>
+  </footer>
 </body>
 </html>

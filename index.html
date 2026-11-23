@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home · Malaria Microscopy AI</title>
-  <meta name="description" content="A plain-language guide to final year research on an AI model that helps read malaria blood smears in understaffed Ugandan clinics.">
+  <title>Malaria Microscopy AI · Final year research</title>
+  <meta name="description" content="A plain-language guide to final year research on an AI model that helps read malaria blood smears in understaffed Ugandan clinics, with a recorded demo of the offline phone app.">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -13,32 +13,33 @@
   <div class="notice"><strong>Ongoing student research.</strong> This is not a medical or diagnostic tool.</div>
   <header class="site-header">
     <div class="wrap">
-      <a class="logo" href="index.html"><span class="mark" aria-hidden="true"></span>
+      <a class="logo" href="#home"><span class="mark" aria-hidden="true"></span>
         <span>Malaria Microscopy AI<small>Final year research · UCU Computing</small></span></a>
       <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav class="nav" id="site-nav" aria-label="Main">
         <ul>
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="problem.html">The Problem</a></li>
-          <li><a href="approach.html">My Approach</a></li>
-          <li><a href="demo.html">Demo</a></li>
-          <li><a href="progress.html">Progress</a></li>
-          <li><a href="about.html">About &amp; Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#problem">The Problem</a></li>
+          <li><a href="#approach">My Approach</a></li>
+          <li><a href="#demo">Demo</a></li>
+          <li><a href="#progress">Progress</a></li>
+          <li><a href="#about">About &amp; Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <div class="wrap">
+    <section id="home" class="section">
+      <div class="wrap">
       <section class="hero">
         <div>
           <span class="tag">Research in progress · 2026</span>
           <h1>Helping understaffed clinics read malaria slides like a specialist</h1>
           <p class="lead">I am a final year Computer Science student at Uganda Christian University. My research is building a small AI model that looks at photos of thick blood smears and points out likely malaria parasites, so that a trained person can check them faster. It is designed to run offline on an ordinary Android phone in clinics that have few trained microscopists.</p>
           <p style="margin-top:24px">
-            <a class="btn btn-primary" href="demo.html">Watch the demo</a>
-            <a class="btn btn-secondary" href="approach.html">How it works</a>
+            <a class="btn btn-primary" href="#demo">Watch the demo</a>
+            <a class="btn btn-secondary" href="#approach">How it works</a>
           </p>
         </div>
         <div class="hero-art">
@@ -49,33 +50,195 @@
       <div class="cards">
         <div class="card"><div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></div><h3>The problem</h3>
           <p>Looking at a stained drop of blood under a microscope is the standard test for malaria, but many rural clinics in Uganda have too few trained staff to read slides quickly [2], [3].</p>
-          <p style="margin-top:10px"><a href="problem.html">Read about the problem →</a></p></div>
+          <p style="margin-top:10px"><a href="#problem">Read about the problem →</a></p></div>
         <div class="card"><div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="7" r="2.5"/><circle cx="12" cy="13" r="3"/><circle cx="6" cy="19" r="2.5"/><path d="M7 7.5 10 11M17 8.5 14.5 11.5M10 15 7.5 17.5"/></svg></div><h3>My approach</h3>
           <p>The model looks at each cell together with the cells around it, the way a microscopist does. A larger model then teaches a smaller one that is light enough for a phone.</p>
-          <p style="margin-top:10px"><a href="approach.html">See how it works →</a></p></div>
+          <p style="margin-top:10px"><a href="#approach">See how it works →</a></p></div>
         <div class="card"><div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg></div><h3>Built for low-resource settings</h3>
           <p>Designed for a 4 GB RAM Android phone and trained only on Ugandan images collected at Mulago National Referral Hospital [3], [7].</p>
-          <p style="margin-top:10px"><a href="progress.html">Follow the progress →</a></p></div>
+          <p style="margin-top:10px"><a href="#progress">Follow the progress →</a></p></div>
       </div>
 
       <div class="status"><strong>Where things stand:</strong> a working prototype app now runs fully offline on an ordinary Android phone and is shown in the recorded demo. The research is still in progress: the app has not been clinically validated and must not be used for diagnosis.</div>
 
-      <section class="sources" aria-labelledby="src">
-        <h2 id="src">Sources</h2>
-        <p style="font-size:14px;color:var(--muted);margin-bottom:10px">Numbers match the reference list of my approved research proposal.</p>
-        <ol>
-          <li>[2] R. Nakasi, E. Mwebaze, A. Zawedde, J. Tusubira, B. Akera, and G. Maiga, “A new approach for microscopic diagnosis of malaria parasites in thick blood smears using pre-trained deep learning models,” <i>SN Applied Sciences</i>, vol. 2, p. 1255, 2020.</li>
-          <li>[3] R. Nakasi, E. Mwebaze, and A. Zawedde, “Mobile-aware deep learning algorithms for malaria parasites and white blood cells localization in thick blood smears,” <i>Algorithms</i>, vol. 14, no. 1, p. 17, 2021.</li>
-          <li>[7] J. A. Quinn, R. Nakasi, P. K. B. Mugagga, P. Byanyima, W. Lubega, and A. Andama, “Deep convolutional neural networks for microscopy-based point of care diagnostics,” in <i>Proc. 1st Machine Learning for Healthcare Conf.</i>, PMLR vol. 56, 2016, pp. 271–281.</li>
-        </ol>
-      </section>
-    </div>
+      </div>
+    </section>
+    <section id="problem" class="section alt">
+      <div class="wrap">
+      <div class="page-head">
+        <span class="tag">The Problem</span>
+        <h1>Why malaria slides need more expert eyes</h1>
+        <p class="lead">Malaria is still one of the deadliest infectious diseases in the world. The World Health Organization estimates 282 million cases and 610,000 deaths in 2024, with 95% of both in Africa, and Uganda carries a large share of this burden [1].</p>
+      </div>
+      <div class="prose">
+        <h2>How malaria is tested</h2>
+        <p>The gold-standard test, recommended by the WHO, is microscopy: a drop of blood is spread on a glass slide, stained and examined by a trained person who looks for the parasites [2], [3].</p>
+        <ul>
+          <li>A <strong>thick smear</strong> uses more blood, so it is much more sensitive for finding parasites [7].</li>
+          <li>A <strong>thin smear</strong> spreads the cells in a single layer, so the shape of infected cells can be seen and the type of parasite identified [7].</li>
+        </ul>
+        <h2>The gap</h2>
+        <p>Reading thick smears well takes training and time. Rural clinics in Uganda, especially those away from the big referral hospitals, do not have enough trained laboratory staff [2], [3]. This delays diagnosis and leads to inappropriate treatment, and children under five and pregnant women face the greatest risk [1], [2], [3].</p>
+        <h2>Where AI can help</h2>
+        <p>Researchers at the Makerere AI Lab have shown that AI models can find malaria parasites in photos of thick smears taken with a phone fitted to a microscope, and one of their models ran as an Android app [3], [7]. My research builds on this work.</p>
+        <div class="box">
+          <h3>What this research is not</h3>
+          <p>It is not a replacement for laboratory staff. The aim is a second pair of eyes that highlights likely parasites for a person to check. It is not a finished or clinically tested tool, and it must not be used to diagnose anyone.</p>
+        </div>
+        <p><a class="btn btn-primary" href="#approach">How my approach works</a></p>
+      </div>
+      </div>
+    </section>
+    <section id="approach" class="section">
+      <div class="wrap">
+      <div class="page-head">
+        <span class="tag">My Approach</span>
+        <h1>How the model works</h1>
+        <p class="lead">Five steps take a microscope photo to a highlighted result. Each step is explained in plain words, with the technical name underneath.</p>
+      </div>
+      <div class="box">
+        <h3>Why a graph?</h3>
+        <p>A trained microscopist does not judge one cell on its own: they look at how it relates to the cells around it, for example how parasites cluster [3]. Graph attention networks can learn this kind of relationship, and they have worked well in other medical images [9], [10]. Using them for malaria is the new idea in this research.</p>
+      </div>
+      <figure class="figure">
+        <picture>
+          <source media="(max-width: 760px)" srcset="images/pipeline-tall.svg">
+          <img src="images/pipeline-wide.svg" alt="Five steps: find the spots, connect neighbours, learn what matters, make it smaller, run on a phone" width="1280" height="420">
+        </picture>
+        <figcaption>From a smear photo to a parasite count, in five steps.</figcaption>
+      </figure>
+      <h2>The five steps in more detail</h2>
+      <div class="steps-text">
+        <div class="card"><div class="icon" aria-hidden="true">1</div><h3>Find the spots</h3><p>A simple stain filter finds every dark-stained spot in the image that could be a parasite. It needs no labels, so it works the same way in a clinic.</p><span class="tech">Label-free candidate detection</span></div>
+        <div class="card"><div class="icon" aria-hidden="true">2</div><h3>Connect neighbours</h3><p>Each spot becomes a point in a graph, described by its shape, colour and a small picture of it, and is linked to its 5 nearest neighbours.</p><span class="tech">k-nearest-neighbour graph, k = 5</span></div>
+        <div class="card"><div class="icon" aria-hidden="true">3</div><h3>Learn what matters</h3><p>A graph attention network looks at each spot together with its neighbours and learns which neighbours matter most for deciding: parasite or not [9].</p><span class="tech">Graph attention network, 8 heads</span></div>
+        <div class="card"><div class="icon" aria-hidden="true">4</div><h3>Make it smaller</h3><p>A larger ‘teacher’ model trains a small ‘student’ model to copy its answers. The proposal’s target was a student that keeps at least 90% of the teacher’s accuracy score (AUC-ROC) [12].</p><span class="tech">Knowledge distillation</span></div>
+        <div class="card"><div class="icon" aria-hidden="true">5</div><h3>Run on a phone</h3><p>The student model is exported to ONNX, a file of under 1 MB, and runs offline in an Android app on an ordinary phone with about 4 GB of RAM. The app circles the likely parasites and shows a count.</p><span class="tech">ONNX Runtime on Android</span></div>
+      </div>
+      <div class="box">
+        <h3>Why a smaller model?</h3>
+        <p>Earlier Makerere work found that the most accurate model (Faster R-CNN) was too heavy for phones, while the lighter phone model (SSD MobileNet) missed more parasites [2], [3]. This research tests whether a distilled graph model can be both accurate and light.</p>
+      </div>
+      <p><a class="btn btn-primary" href="#demo">See it in the demo</a></p>
+      </div>
+    </section>
+    <section id="demo" class="section alt">
+      <div class="wrap">
+      <div class="page-head">
+        <span class="tag">Demo</span>
+        <h1>Demo: the prototype in action</h1>
+        <p class="lead">A short screen recording of my prototype app on an Android phone, analysing thick blood smear images with no internet connection. It shows the app as it is today, not a finished product.</p>
+      </div>
+      <div class="demo">
+        <div>
+          <!-- T17 (Day 9): replace this placeholder with the video:
+          <div class="video"><video controls preload="metadata" poster="images/demo-poster.jpg" playsinline>
+            <source src="video/demo.mp4" type="video/mp4">
+            Your browser can't play this video. <a href="video/demo.mp4">Download it instead</a>.
+          </video></div> -->
+          <div class="video" style="display:grid;place-items:center;color:var(--mint);text-align:center;padding:24px;max-width:360px">
+            <p><strong>Demo video coming soon</strong><br><span style="font-size:14px;opacity:.8">The recording is being edited and will appear here.</span></p>
+          </div>
+        </div>
+        <div>
+          <h2 style="margin-top:0">What you will see</h2>
+          <div class="prose"><ul>
+            <li>Choosing a thick blood smear image in the app</li>
+            <li>The app working offline, with the phone in airplane mode</li>
+            <li>Likely parasites circled, with a count, for a person to check</li>
+            <li>The confidence shown beside each mark, and where the app is still unsure</li>
+          </ul></div>
+          <div class="warn"><strong>Not a diagnostic tool.</strong> The prototype is unfinished research and has not been tested in a clinic. Malaria must be diagnosed by qualified laboratory staff.</div>
+          <p class="credit"><strong>Image credit:</strong> images in this demo come from the annotated malaria image dataset of the Makerere University AI Lab (<a href="https://air.ug/microscopy/">air.ug/microscopy</a>), released with J. A. Quinn et al., “Deep convolutional neural networks for microscopy-based point of care diagnostics,” PMLR vol. 56, 2016 [7]. Used under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International licence</a>. Highlight circles were added by my prototype.</p>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section id="progress" class="section">
+      <div class="wrap">
+      <div class="page-head">
+        <span class="tag">Progress Updates</span>
+        <h1>Progress updates</h1>
+        <p class="lead">Short notes on where the research stands. New updates are added at the top as the work continues.</p>
+      </div>
+      <ol class="timeline">
+        <li class="next"><span class="when">Up next</span><span class="dot" aria-hidden="true"></span>
+          <div class="body"><h3>Final report <span class="pill pill-next">Up next</span></h3><p>Write up the results in the final research report (end of November 2026).</p></div></li>
+        <li class="next"><span class="when">November 2026</span><span class="dot" aria-hidden="true"></span>
+          <div class="body"><h3>Usability study with laboratory staff <span class="pill pill-next">This week</span></h3><p>Laboratory staff at a local health centre try the app and give feedback on how easy it is to use.</p></div></li>
+        <li class=""><span class="when">November 2026</span><span class="dot" aria-hidden="true"></span>
+          <div class="body"><h3>This website launched <span class="pill pill-done">Done</span></h3><p>A plain-language explanation of the research and a recorded demo of the prototype, for students, lecturers and clinic staff.</p></div></li>
+        <li class=""><span class="when">11 November 2026</span><span class="dot" aria-hidden="true"></span>
+          <div class="body"><h3>Research presented and approved <span class="pill pill-done">Done</span></h3><p>The research and prototype were presented and approved to continue. Following the feedback, the app’s clinic screen was redesigned to make the parasite count and confidence easier to read.</p></div></li>
+        <li class=""><span class="when">Early November 2026</span><span class="dot" aria-hidden="true"></span>
+          <div class="body"><h3>Tested at a second hospital <span class="pill pill-done">Done</span></h3><p>The model was tested on images from Kiruddu National Referral Hospital, taken with different phones, and adjusted with a camera setting for each phone (Lacuna Malaria Datasets, Makerere AI Lab, CC BY 4.0).</p></div></li>
+        <li class=""><span class="when">October–November 2026</span><span class="dot" aria-hidden="true"></span>
+          <div class="body"><h3>Teacher, student and phone app <span class="pill pill-done">Done</span></h3><p>A graph attention teacher model was trained and distilled into a small student model, which was exported to ONNX and built into an Android app that runs fully offline.</p></div></li>
+        <li class=""><span class="when">October 2026</span><span class="dot" aria-hidden="true"></span>
+          <div class="body"><h3>Datasets checked <span class="pill pill-done">Done</span></h3><p>Two Ugandan thick smear datasets from Mulago National Referral Hospital were checked: 1,182 and 930 images [3], [7].</p></div></li>
+      </ol>
+      </div>
+    </section>
+    <section id="about" class="section alt">
+      <div class="wrap">
+      <div class="page-head">
+        <span class="tag">About &amp; Contact</span>
+        <h1>About this project</h1>
+        <p class="lead">This website explains my final year research project at Uganda Christian University, Faculty of Engineering, Design and Technology, Department of Computing and Technology. The research is still in progress.</p>
+      </div>
+      <div class="contact">
+        <div class="card">
+          <h3>About me</h3>
+          <p>I am a third-year Bachelor of Science in Computer Science student interested in using technology for health care in Uganda and East Africa. The website itself was planned and built as a small, separately managed project using only free tools and hosting.</p>
+        </div>
+        <div class="card">
+          <h3>Contact</h3>
+          <p>Questions about the research: <a href="mailto:malaria.microscopy.project@gmail.com">malaria.microscopy.project@gmail.com</a></p>
+          <p><strong>Please do not send personal, medical or patient information.</strong></p>
+        </div>
+        <div class="card">
+          <h3>Feedback</h3>
+          <p>Tell me what you think. The form is anonymous and takes about 2 minutes.</p>
+          <!-- T18 (Day 9): put the Google Form link in href and remove the note -->
+          <p style="margin-top:14px"><a class="btn btn-primary" href="#" aria-disabled="true">Give feedback</a></p>
+          <p style="font-size:13.5px">The feedback form opens on 26 November 2026.</p>
+        </div>
+        <div class="card">
+          <h3>Credits and licences</h3>
+          <div class="prose"><ul style="font-size:15.5px;color:var(--muted)">
+            <li>Demo images: Makerere University AI Lab, CC BY 4.0 (full credit on the <a href="#demo">Demo page</a>).</li>
+            <li>Diagrams and text: my own work.</li>
+            <li>Hosting: GitHub Pages.</li>
+          </ul></div>
+        </div>
+      </div>
+      <div class="warn">This site describes ongoing student research. It is not a medical or diagnostic tool.</div>
+      </div>
+    </section>
+    <section id="sources" class="section">
+      <div class="wrap">
+        <div class="sources" style="margin-top:0">
+          <h2>Sources</h2>
+          <p style="font-size:14px;color:var(--muted);margin-bottom:10px">Numbers match the reference list of my approved research proposal.</p>
+          <ol>
+            <li>[1] World Health Organization, “Malaria,” Fact sheet, 2025. [Online]. Available: <a href="https://www.who.int/news-room/fact-sheets/detail/malaria">who.int/news-room/fact-sheets/detail/malaria</a></li>
+            <li>[2] R. Nakasi, E. Mwebaze, A. Zawedde, J. Tusubira, B. Akera, and G. Maiga, “A new approach for microscopic diagnosis of malaria parasites in thick blood smears using pre-trained deep learning models,” <i>SN Applied Sciences</i>, vol. 2, p. 1255, 2020.</li>
+            <li>[3] R. Nakasi, E. Mwebaze, and A. Zawedde, “Mobile-aware deep learning algorithms for malaria parasites and white blood cells localization in thick blood smears,” <i>Algorithms</i>, vol. 14, no. 1, p. 17, 2021.</li>
+            <li>[7] J. A. Quinn, R. Nakasi, P. K. B. Mugagga, P. Byanyima, W. Lubega, and A. Andama, “Deep convolutional neural networks for microscopy-based point of care diagnostics,” in <i>Proc. 1st Machine Learning for Healthcare Conf.</i>, PMLR vol. 56, 2016, pp. 271–281.</li>
+            <li>[9] P. Veličković, G. Cucurull, A. Casanova, A. Romero, P. Liò, and Y. Bengio, “Graph attention networks,” in <i>Proc. ICLR</i>, 2018.</li>
+            <li>[10] D. Ahmedt-Aristizabal, M. A. Armin, S. Denman, C. Fookes, and L. Petersson, “Graph-based deep learning for medical diagnosis and analysis: Past, present and future,” <i>Sensors</i>, vol. 21, no. 14, p. 4758, 2021.</li>
+            <li>[12] G. Hinton, O. Vinyals, and J. Dean, “Distilling the knowledge in a neural network,” arXiv:1503.02531, 2015.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
       <span>Student research project · Uganda Christian University</span>
       <span>Contact: <a href="mailto:malaria.microscopy.project@gmail.com">malaria.microscopy.project@gmail.com</a></span>
+      <a href="#home">Back to top ↑</a>
     </div>
   </footer>
 </body>

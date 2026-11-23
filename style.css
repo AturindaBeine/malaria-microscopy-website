@@ -178,3 +178,11 @@ p + p { margin-top: 12px; }
 .steps-text .card .icon { font-size: 16px; }
 .steps-text .card .tech { display: block; margin-top: 8px; font-size: 13px; font-weight: 700; color: var(--coral); }
 .btn[aria-disabled="true"] { opacity: .55; pointer-events: none; }
+
+/* One scrolling page (CR-02) */
+.section { padding: 8px 0 56px; scroll-margin-top: 72px; }
+.section.alt { background: var(--white); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.section.alt .card, .section.alt .status, .section.alt .timeline .body, .section.alt .warn, .section.alt .figure { background: var(--sand); }
+#home { padding-top: 0; }
+main { padding-bottom: 0; }
+.nav a.active { color: var(--teal); font-weight: 700; background: var(--mint); }

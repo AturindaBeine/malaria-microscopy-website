@@ -10,7 +10,6 @@
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <div class="notice"><strong>Ongoing student research.</strong> This is not a medical or diagnostic tool.</div>
   <header class="site-header">
     <div class="wrap">
       <a class="logo" href="#home"><span class="mark" aria-hidden="true"></span>
@@ -59,7 +58,7 @@
           <p style="margin-top:10px"><a href="#progress">Follow the progress →</a></p></div>
       </div>
 
-      <div class="status"><strong>Where things stand:</strong> a working prototype app now runs fully offline on an ordinary Android phone and is shown in the recorded demo. The research is still in progress: the app has not been clinically validated and must not be used for diagnosis.</div>
+      <div class="status"><strong>Where things stand:</strong> a working prototype app now runs fully offline on an ordinary Android phone and is shown in the recorded demo. The research is still in progress.</div>
 
       </div>
     </section>
@@ -81,10 +80,7 @@
         <p>Reading thick smears well takes training and time. Rural clinics in Uganda, especially those away from the big referral hospitals, do not have enough trained laboratory staff [2], [3]. This delays diagnosis and leads to inappropriate treatment, and children under five and pregnant women face the greatest risk [1], [2], [3].</p>
         <h2>Where AI can help</h2>
         <p>Researchers at the Makerere AI Lab have shown that AI models can find malaria parasites in photos of thick smears taken with a phone fitted to a microscope, and one of their models ran as an Android app [3], [7]. My research builds on this work.</p>
-        <div class="box">
-          <h3>What this research is not</h3>
-          <p>It is not a replacement for laboratory staff. The aim is a second pair of eyes that highlights likely parasites for a person to check. It is not a finished or clinically tested tool, and it must not be used to diagnose anyone.</p>
-        </div>
+        <p>The aim is not to replace laboratory staff, but to give them a second pair of eyes that highlights likely parasites for a person to check.</p>
         <p><a class="btn btn-primary" href="#approach">How my approach works</a></p>
       </div>
       </div>
@@ -109,9 +105,9 @@
       </figure>
       <h2>The five steps in more detail</h2>
       <div class="steps-text">
-        <div class="card"><div class="icon" aria-hidden="true">1</div><h3>Find the spots</h3><p>A simple stain filter finds every dark-stained spot in the image that could be a parasite. It needs no labels, so it works the same way in a clinic.</p><span class="tech">Label-free candidate detection</span></div>
-        <div class="card"><div class="icon" aria-hidden="true">2</div><h3>Connect neighbours</h3><p>Each spot becomes a point in a graph, described by its shape, colour and a small picture of it, and is linked to its 5 nearest neighbours.</p><span class="tech">k-nearest-neighbour graph, k = 5</span></div>
-        <div class="card"><div class="icon" aria-hidden="true">3</div><h3>Learn what matters</h3><p>A graph attention network looks at each spot together with its neighbours and learns which neighbours matter most for deciding: parasite or not [9].</p><span class="tech">Graph attention network, 8 heads</span></div>
+        <div class="card"><div class="icon" aria-hidden="true">1</div><h3>Find the spots</h3><p>Malaria parasites take up the purple stain, so they show as dark dots. The app first finds every dark dot in the photo that might be a parasite, much like a lab worker scanning the slide for anything suspicious before looking closely.</p><span class="tech">Label-free candidate detection</span></div>
+        <div class="card"><div class="icon" aria-hidden="true">2</div><h3>Connect neighbours</h3><p>Each dot is joined by a line to the 5 dots closest to it, like linking houses to their nearest neighbours on a map. The dots and lines together are called a graph. Each dot also keeps a note of its size, shape and colour.</p><span class="tech">k-nearest-neighbour graph, k = 5</span></div>
+        <div class="card"><div class="icon" aria-hidden="true">3</div><h3>Learn what matters</h3><p>The model decides, dot by dot: parasite or not? Like an expert who compares a suspicious cell with the cells around it, it looks at each dot together with its neighbours, and it learns which neighbours are most useful to pay attention to [9].</p><span class="tech">Graph attention network, 8 heads</span></div>
         <div class="card"><div class="icon" aria-hidden="true">4</div><h3>Make it smaller</h3><p>A larger ‘teacher’ model trains a small ‘student’ model to copy its answers. The proposal’s target was a student that keeps at least 90% of the teacher’s accuracy score (AUC-ROC) [12].</p><span class="tech">Knowledge distillation</span></div>
         <div class="card"><div class="icon" aria-hidden="true">5</div><h3>Run on a phone</h3><p>The student model is exported to ONNX, a file of under 1 MB, and runs offline in an Android app on an ordinary phone with about 4 GB of RAM. The app circles the likely parasites and shows a count.</p><span class="tech">ONNX Runtime on Android</span></div>
       </div>
@@ -147,7 +143,6 @@
             <li>Likely parasites circled, with a count, for a person to check</li>
             <li>The confidence shown beside each mark, and where the app is still unsure</li>
           </ul></div>
-          <div class="warn"><strong>Not a diagnostic tool.</strong> The prototype is unfinished research and has not been tested in a clinic. Malaria must be diagnosed by qualified laboratory staff.</div>
           <p class="credit"><strong>Image credit:</strong> images in this demo come from the annotated malaria image dataset of the Makerere University AI Lab (<a href="https://air.ug/microscopy/">air.ug/microscopy</a>), released with J. A. Quinn et al., “Deep convolutional neural networks for microscopy-based point of care diagnostics,” PMLR vol. 56, 2016 [7]. Used under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International licence</a>. Highlight circles were added by my prototype. Background music: original, composed for this site.</p>
         </div>
       </div>
@@ -210,7 +205,7 @@
           </ul></div>
         </div>
       </div>
-      <div class="warn">This site describes ongoing student research. It is not a medical or diagnostic tool.</div>
+
       </div>
     </section>
     <section id="sources" class="section">
@@ -234,7 +229,7 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>Student research project · Uganda Christian University</span>
+      <span>Student research project · Uganda Christian University · Not a medical or diagnostic tool</span>
       <span>Contact: <a href="mailto:malaria.microscopy.project@gmail.com">malaria.microscopy.project@gmail.com</a></span>
       <a href="#home">Back to top ↑</a>
     </div>
